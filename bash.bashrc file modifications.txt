@@ -1,0 +1,16 @@
+                                     
+# Add the following to the end of the "/etc/bash.bashrc" file:
+
+if [[ -n $SSH_CONNECTION ]] ; then
+    clear
+
+    echo "Welcome to..."
+    echo ""
+    echo -e " ██████  ██      ███████ \e[93m██\e[39m   ██ "
+    echo -e " ██   ██ ██      ██       \e[93m██\e[39m ██  "
+    echo -e " ██████  ██      █████     \e[93m███\e[39m   "
+    echo -e " ██      ██      ██       \e[93m██\e[39m ██  "
+    echo -e " ██      ███████ ███████ \e[93m██\e[39m   ██ "
+    echo -e "                    \e[1mMedia Server"
+    echo ""
+fi
