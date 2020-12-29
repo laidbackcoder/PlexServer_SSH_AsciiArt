@@ -8,7 +8,8 @@ Plex Logo Ascii Art Example:
 To display the ASCII Art when a user connects to a Linux server via SSH, add the following text to the end of the `"/etc/bash.bashrc"` file on the server:
 
 
-`if [[ -n $SSH_CONNECTION ]] ; then
+```Shell
+if [[ -n $SSH_CONNECTION ]] ; then
 
     clear
     
@@ -21,8 +22,9 @@ To display the ASCII Art when a user connects to a Linux server via SSH, add the
     echo -e " ██      ███████ ███████ \e[93m██\e[39m   ██ "
     echo -e "                    \e[1mMedia Server"
     echo ""
-    
-fi`
+
+fi
+```
 
 On connection, it will look something like this:
 
